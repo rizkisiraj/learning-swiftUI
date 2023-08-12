@@ -13,6 +13,7 @@ import Combine
 
 final class ModelData: ObservableObject {
     @Published var landmarks: [Landmark] = load("landmarkData.json")
+    var hikes: [Hike] = load("hikeData.json")
     
     var features: [Landmark] {
         landmarks.filter {
